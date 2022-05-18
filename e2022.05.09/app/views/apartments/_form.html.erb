@@ -1,0 +1,27 @@
+<%= form_with(model: [@building, apartment], local: true) do |form| %>
+    <% if apartment.errors.any? %>
+    <div id="error_explanation">
+        <h2><%= pluralize(apartment.errors.count, "error") %> no permitieron registrar este departamento:</h2>
+        <ul>
+            <% apartment.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+        </ul>
+    </div>
+    <% end %>
+
+<div class="field">
+    <%= form.label "Número de Depto" %>
+    <%= form.text_field :number %>
+</div>
+<br>
+<div class="field">
+    <%= form.label "Edificio" %>
+    <%= form.select :building_id, @buildings.map {|building| [building.name, building.id] }, prompt: "Seleccione una opción..." %>
+</div>
+<br>
+<div class="actions" >
+    <%= form.submit value="Crear Depto" %>
+</div>
+<br>
+<% end %>

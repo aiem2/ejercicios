@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jams</h1>
+
+<div id="jams">
+  <% @jams.each do |jam| %>
+    <%= render jam %>
+    <p>
+      <%= link_to "Show this jam", jam %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jam", new_jam_path %>

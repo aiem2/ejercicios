@@ -1,0 +1,23 @@
+<br>
+<h1>Departamentos</h1>
+<br>
+    <table>
+        <thead>
+            <tr>
+                <th class="col-4">Número</th> 
+                <th class="col-6">Edificio</th>
+                <th colspan="12"></th>
+            </tr>
+        </thead>
+        <tbody>
+        <% @apartments.each do |depto| %>
+        <tr>
+            <td><%= depto.number %></td>
+            <td><%= depto.building %></td>
+            <td><%=link_to 'Mostrar', building_apartments_path(@building, @apartment) %></td>
+        </tr>
+        <% end %>
+        </tbody>
+    </table>
+    <br>
+    <%= link_to 'Nuevo Departamento', new_building_apartments_path(@building) %>

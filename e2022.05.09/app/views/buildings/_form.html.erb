@@ -1,0 +1,14 @@
+<br>
+<p>Información Edifico</p>
+    <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+    </div>
+<br>
+<p>Información Departamentos</p>
+    <%= form.fields_for :apartments do |apartment_form| %>
+        <%= apartment_form.label :number %>
+        <%= apartment_form.text_field :number %>
+        <%= apartment_form.label :sale_price %>
+        <%= apartment_form.text_field :sale_price %>
+    <% end %>

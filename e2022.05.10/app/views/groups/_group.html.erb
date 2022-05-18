@@ -1,0 +1,39 @@
+<div id="<%= dom_id group %>">
+  <p>
+    <strong>Name:</strong>
+    <%= group.name %>
+  </p>
+
+  <p>
+    <strong>Crew:</strong>
+    <%= group.crew %>
+  </p>
+
+  <p>
+    <strong>Debut date:</strong>
+    <%= group.debut_date %>
+  </p>
+
+  <p>
+    <strong>Group type:</strong>
+    <%= group.group_type %>
+  </p>
+
+  <th>Presentations:</th>
+    <td>
+      <ul><% group.presentations%></ul>
+      <ul> This month: <%= group.this_month%> </ul>
+      <ul> Total: <%= group.presentations%> </ul>
+      <ul>
+        <% group.concerts.each do |concert|%>
+          <li>Localización: <%= concert.place %></li> 
+          <li>Asistentes: <%= concert.attendance %></li>
+          <li>Fecha y hora: <%= concert.date %></li>
+          <br>
+        <%end%>
+      </ul>
+    </td>  
+
+</div>
+
+

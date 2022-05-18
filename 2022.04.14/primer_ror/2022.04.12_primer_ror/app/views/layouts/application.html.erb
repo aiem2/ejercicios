@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PrimerRor</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <a href="<%= pages_index_path %>"> Índice</a>
+    <a href="<%= pages_about_path %>"> Sobre nosotros</a>
+    <%= yield %>
+    <p> Orbo Chile </p>
+  </body>
+</html>

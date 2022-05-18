@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @jam %>
+
+<div>
+  <%= link_to "Edit this jam", edit_jam_path(@jam) %> |
+  <%= link_to "Back to jams", jams_path %>
+
+  <%= button_to "Destroy this jam", @jam, method: :delete %>
+</div>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PrimerRor</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= image_tag 'logo.png', id:'logo', alt:'Logo Orbo Chile', height:'50vh', class:'barra'%>
+    <br>
+    <p class='barra' id='menu'>
+      <a href="<%= pages_index_path %>"> Índice</a>
+      <a href="<%= pages_about_path %>"> Sobre nosotros</a>
+      <a href="<%= pages_team_path %>"> Nuestro Equipo</a>
+    </p>
+    <%= yield %>
+    <h5> Orbo Chile </h5>
+  </body>
+</html>

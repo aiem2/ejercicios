@@ -1,0 +1,93 @@
+*{
+    margin: auto;
+    border: 0;
+}
+
+header{
+    text-align:center;
+    background-color:blueviolet;
+           
+}
+
+.navbar_custom{
+    background-color: blueviolet
+}
+
+.menu{
+    display:inline-flex;
+    justify-content:center;
+    
+}
+
+ul{
+    list-style-type:none;
+    display:block;
+}
+
+li{
+    margin: 10px ;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:white
+}
+
+
+
+.descripcion{
+    display:flex;
+    margin:15px;
+    background-color:white
+}
+
+.que_hacemos{
+    display:block;
+    margin:10px
+}
+
+.ultimos_trabajos{
+    display:block;
+    margin:10px
+}
+
+h2{
+    color:purple;
+    display:block
+}
+
+p{
+    color:blueviolet;
+    display:inline;
+    
+}
+
+.contacto{
+    background-color:purple;
+    color:white;
+    text-align:center;
+    padding-top: 10px;
+    display:block
+}
+
+
+.lista_contactos{
+    display:flex;
+    
+}
+
+
+footer{
+    background-color:violet;
+    color:blueviolet;
+    text-align:center;
+    font-size:small;
+    height: 5em;
+}
+
+h4{
+    padding-top: 1em;
+    font-size: 1rem
+
+}

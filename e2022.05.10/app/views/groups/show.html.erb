@@ -1,0 +1,32 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @group %>
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Group</th>
+      <th scope="col">Concerts this month</th>
+      <th scope="col">Last concert</th>
+      <th scope="col">Max attendance (people)</th>
+      <th scope="col">Max duration (minutes)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @group.name%></td>
+      <td><%= @group.this_month%></td>
+      <td><%= @group.last%></td>
+      <td><%= @group.max%></td>
+      <td><%= @group.max_dur%></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div>
+  <%= link_to "Edit this group", edit_group_path(@group) %> |
+  <%= link_to "Back to groups", groups_path %>
+  <br>
+  <br>
+  <%= button_to "Destroy this group", @group, method: :delete %>
+</div>

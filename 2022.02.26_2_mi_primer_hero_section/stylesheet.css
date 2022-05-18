@@ -1,0 +1,26 @@
+*{
+    border:0;
+    margin:0;
+    padding:0
+}
+
+header{
+    background-image: url(/assets/images/Bienvenido.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:open sans;
+    text-shadow: 0px 3px 6px black;
+    color: #ffffff;
+    text-align:right
+
+}
+
+header h1{
+    font-size:1.75em
+}
+
+header h3{
+    font-size: | em;
+    font-weight: lighter
+}
